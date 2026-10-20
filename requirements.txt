@@ -1,0 +1,13 @@
+chromadb
+langchain
+langchain-community
+langchain-ollama
+langchain-chroma
+langchain-text-splitters
+streamlit
+ollama
+pypdf
+docx2txt
+unstructured[all-docs]
+beautifulsoup4
+openpyxl

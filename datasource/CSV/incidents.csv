@@ -1,0 +1,5 @@
+incident_id,severity,service,status,region,root_cause,resolution
+INC1001,Sev2,Compute,Resolved,us-east-1,Stale image-store queue,Cleared stale queue after validating active transfers
+INC1002,Sev1,Network,Resolved,eu-west-1,Border router software fault,Failed over to standby router
+INC1003,Sev3,Compute,Resolved,ap-south-1,Capacity threshold,Added two compute workers
+INC1004,Sev2,Storage,Investigating,us-east-1,Elevated backend latency,Vendor investigation in progress

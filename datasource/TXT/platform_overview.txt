@@ -1,0 +1,17 @@
+ACMECloud Private Cloud - Platform Overview
+Environment: Production
+Primary regions: us-east-1, eu-west-1, ap-south-1
+Platform services: Compute, Storage, Network, IAM, Monitoring.
+Compute provisioning target: 15 minutes for standard VM requests.
+Critical incident response target: acknowledge within 15 minutes and engage the on-call engineer.
+Backup retention: 35 days for production databases.
+Maintenance window: Sunday 01:00-04:00 UTC.
+Escalation: Service Desk -> Platform SRE -> Service Owner -> Incident Commander.
+
+Known issue KC-104: VM provisioning can remain in QUEUED when the image-store worker has stale queue state.
+Workaround: verify image-store worker health, inspect active transfer jobs, and restart the worker only after confirming no active transfer is progressing.
+
+Contacts:
+Platform SRE: platformsre@acmecloud.example
+Compute Owner: compute-owner@acmecloud.example
+Security: security@acmecloud.example

@@ -1,0 +1,29 @@
+{
+  "platform": "ACMECloud",
+  "regions": [
+    "us-east-1",
+    "eu-west-1",
+    "ap-south-1"
+  ],
+  "services": {
+    "compute": {
+      "owner": "Platform SRE",
+      "slo": "99.95%"
+    },
+    "storage": {
+      "owner": "Storage SRE",
+      "slo": "99.99%"
+    }
+  },
+  "policies": {
+    "backup_retention_days": 35,
+    "maintenance_window": "Sunday 01:00-04:00 UTC"
+  },
+  "known_issues": [
+    {
+      "id": "KC-104",
+      "symptom": "VM remains QUEUED",
+      "cause": "stale image-store queue"
+    }
+  ]
+}
